@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.socials {
+    background-color: #1f1f1f;
+    padding: 15px;
+    width: 50%;
+    margin: 25px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+@media (orientation: portrait) and (max-width: 720px) {
+    .socials {
+        width: 75%;
+    }
+}
+
+html,body {
+    background-color: #1a1a1a;
+    margin: 10% 0 0 0;
+}
+p,li,a,small,h1,h2,h3,h4,summary {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+a:link,a:visited {
+    color: lightgreen;
+}
+h1,h2 {
+    font-family: 'league_spartanbold';
+}
+small {
+    color: lightgray;
+}
+img {
+    margin: 15px 5px 5px 5px;
+}
+
+/* Summary button hover styling */
+summary {
+    transition: transform 0.25s ease;
+}
+summary:hover {
+    transform: translateY(1px);
+    cursor: pointer;
+}
+summary:not(:hover) {
+    transform: translateY(0px);
+}
+
+/* WIP: Socials accordion slide animation */
+.socials:has(details) {
+    max-height: 25px;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.socials:has(details[open]) {
+    max-height: 1000px;
+}
