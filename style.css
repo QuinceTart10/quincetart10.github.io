@@ -39,8 +39,10 @@ h1,h2 {
 small {
     color: lightgray;
 }
-img {
+
+.social-img {
     margin: 15px 5px 5px 5px;
+    height: 35px;
 }
 
 /* Summary button hover styling */
