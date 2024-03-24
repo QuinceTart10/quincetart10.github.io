@@ -21,9 +21,14 @@
     }
 }
 
-html,body {
+html {
     background-color: #1a1a1a;
-    margin: 10% 0 0 0;
+}
+body {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin: 0;
 }
 p,li,a,small,h1,h2,h3,h4,summary {
     color: white;
