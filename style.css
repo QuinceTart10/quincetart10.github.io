@@ -48,6 +48,14 @@ small {
 .social-img {
     margin: 15px 5px 5px 5px;
     height: 35px;
+    transition: transform 0.25s ease;
+}
+.social-img:hover {
+    transform: translateY(1px);
+    cursor: pointer;
+}
+.social-img:not(:hover) {
+    transform: translateY(0px);
 }
 
 /* Summary button hover styling */
